@@ -1,0 +1,3 @@
+@model Employee
+@{ ViewData["Title"] = "Delete employee"; }
+<section class="card form-card"><p class="eyebrow">EMPLOYEE ACCOUNTS</p><h1>Delete @Model.DisplayName?</h1><p>This permanently removes the account. Employees referenced by tickets and your own account cannot be deleted.</p><form asp-action="Delete" asp-route-id="@Model.Id" method="post"><div asp-validation-summary="All" class="validation" role="alert"></div><label class="checkbox"><input type="checkbox" name="confirm" value="true" required /> I confirm deletion of this employee account.</label><div class="form-actions"><button class="button destructive" type="submit">Delete employee</button><a class="button ghost" asp-action="Index">Cancel</a></div></form></section>

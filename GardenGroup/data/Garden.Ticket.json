@@ -1,0 +1,3634 @@
+[
+  {
+    "_id": {
+      "$oid": "fbd8ae9c84e3b2cfd40ccec0"
+    },
+    "title": "Server unreachable",
+    "description": "Reported issue: Server unreachable. The server cannot be reached. Please investigate server availability and connectivity.",
+    "reportedByEmployeeId": {
+      "$oid": "cd5a6e961b069cd4b8018882"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "a54c60b8d64ed0ce3f7cfb56"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-01-06T07:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "Critical"
+  },
+  {
+    "_id": {
+      "$oid": "7d63591e797bdfb15e39d5aa"
+    },
+    "title": "Server unreachable",
+    "description": "Reported issue: Server unreachable. The server cannot be reached. Please investigate server availability and connectivity.",
+    "reportedByEmployeeId": {
+      "$oid": "933a42210adce7537566e952"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "72ddd54d63b84cfb20944506"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-07-31T20:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-08-02T20:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-08-02T22:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "Critical"
+  },
+  {
+    "_id": {
+      "$oid": "c7324cc049dda826f95fa737"
+    },
+    "title": "Server unreachable",
+    "description": "Reported issue: Server unreachable. The server cannot be reached. Please investigate server availability and connectivity.",
+    "reportedByEmployeeId": {
+      "$oid": "032f70d118b8f1c232890ebc"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "72ddd54d63b84cfb20944506"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-06-26T16:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "Critical"
+  },
+  {
+    "_id": {
+      "$oid": "892c28bfa84f5582481241db"
+    },
+    "title": "Cannot access shared drive",
+    "description": "Reported issue: Cannot access shared drive. The employee cannot access the shared drive. Please check connectivity and access permissions.",
+    "reportedByEmployeeId": {
+      "$oid": "032f70d118b8f1c232890ebc"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-07-24T14:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "769e681191088645f7413566"
+    },
+    "title": "Mouse not working",
+    "description": "Reported issue: Mouse not working. The mouse is not working. Please check the device and its connection.",
+    "reportedByEmployeeId": {
+      "$oid": "b2f0a46d27d8d43f6241c3f2"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "72ddd54d63b84cfb20944506"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-07-29T04:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-08-08T04:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-08-08T04:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "5e337750b0705d3e3c89861d"
+    },
+    "title": "Monitor flickering",
+    "description": "Reported issue: Monitor flickering. The monitor is flickering. Please check the display, cable and settings.",
+    "reportedByEmployeeId": {
+      "$oid": "f155fdaeed4b7730229296a1"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-11-12T11:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "22b03755735b2ffaaf0207cd"
+    },
+    "title": "Software license expired",
+    "description": "Reported issue: Software license expired. The software reports that its licence has expired. Please check the licence.",
+    "reportedByEmployeeId": {
+      "$oid": "032f70d118b8f1c232890ebc"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d3cb2e5d477bf6b7e51f4ed6"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2026-08-18T22:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2026-08-22T22:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "bf0d203fa114e6d467863570"
+    },
+    "title": "Spam emails flooding inbox",
+    "description": "Reported issue: Spam emails flooding inbox. The employee reports excessive spam in their inbox. Please check the mail filtering settings.",
+    "reportedByEmployeeId": {
+      "$oid": "baf771a857e892cda79941b1"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-05-05T08:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "390d7bec88dbf0fb451126a5"
+    },
+    "title": "Cannot access shared drive",
+    "description": "Reported issue: Cannot access shared drive. The employee cannot access the shared drive. Please check connectivity and access permissions.",
+    "reportedByEmployeeId": {
+      "$oid": "b2f0a46d27d8d43f6241c3f2"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d366a14b27040442ad903d3f"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-03-28T02:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "704e3e7420a29a386b0ea0a9"
+    },
+    "title": "Wifi keeps disconnecting",
+    "description": "Reported issue: Wifi keeps disconnecting. The WiFi connection keeps disconnecting. Please investigate the wireless connection.",
+    "reportedByEmployeeId": {
+      "$oid": "e4cb722f1b993ea6b58029b2"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-07-27T18:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "977a5bce61cf9c10f27d0ad0"
+    },
+    "title": "Password reset needed",
+    "description": "Reported issue: Password reset needed. The employee needs help resetting their account password.",
+    "reportedByEmployeeId": {
+      "$oid": "23b6dedd39845d4bebc3d8a2"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "0781dd5ef8df306474ba7571"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-07-07T22:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "075c02364569418dcb2c3e89"
+    },
+    "title": "Software installation request",
+    "description": "Reported issue: Software installation request. The employee requests a software installation. Please review and arrange the installation.",
+    "reportedByEmployeeId": {
+      "$oid": "0f8c87dea33eb978900ea5e4"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "0781dd5ef8df306474ba7571"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-05-06T07:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-05-10T07:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-05-10T10:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "37b6c02d76471b7f7a1fd8b9"
+    },
+    "title": "VPN connection failing",
+    "description": "Reported issue: VPN connection failing. The employee cannot establish a VPN connection. Please investigate remote access.",
+    "reportedByEmployeeId": {
+      "$oid": "cfe46254cdb483e4aee41bdf"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "a54c60b8d64ed0ce3f7cfb56"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-02-16T07:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "8b7e4f4418975f86613a4c04"
+    },
+    "title": "Keyboard not responding",
+    "description": "Reported issue: Keyboard not responding. The keyboard is not responding. Please check the device and its connection.",
+    "reportedByEmployeeId": {
+      "$oid": "17abe7bdf6cfc2baa8e94182"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b17e06a06942c09081901892"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-08-19T06:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-08-24T06:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-08-24T09:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "99be34595c06ad415a817904"
+    },
+    "title": "Mouse not working",
+    "description": "Reported issue: Mouse not working. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "aecea41221211513017c317f"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "162c5dbc610f6403d438d2c2"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-07-18T08:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "2b6255cc1d9e54299642f9ac"
+    },
+    "title": "Database connection timeout",
+    "description": "Reported issue: Database connection timeout. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "1223c27c75ba0519e7fe4377"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "ea23143b0a87f416437cb334"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-03-19T10:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "7ca31342efa51e19fe9e906a"
+    },
+    "title": "Server unreachable",
+    "description": "Reported issue: Server unreachable. The server cannot be reached. Please investigate server availability and connectivity.",
+    "reportedByEmployeeId": {
+      "$oid": "88561296c2ec62d0d44e6903"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "72ddd54d63b84cfb20944506"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-04-04T07:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-04-04T07:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-04-04T08:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "Critical"
+  },
+  {
+    "_id": {
+      "$oid": "3ec59f7eb76348447d08c7b8"
+    },
+    "title": "Software license expired",
+    "description": "Reported issue: Software license expired. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "68e2270cc4535c15fc2fe1cb"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d7448f42d1771d0459e82e92"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-03-24T04:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "6143e0b8663a7f85750d55ba"
+    },
+    "title": "File corrupted",
+    "description": "Reported issue: File corrupted. The employee reports a corrupted file. Please investigate whether it can be recovered.",
+    "reportedByEmployeeId": {
+      "$oid": "3fe11e37b88700ab1a588226"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fb7eeec0a2fe29a171a704ca"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-05-16T02:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "3982502899368d5efbb4320a"
+    },
+    "title": "Backup failed overnight",
+    "description": "Reported issue: Backup failed overnight. The overnight backup failed. Please check the backup job and its error logs.",
+    "reportedByEmployeeId": {
+      "$oid": "715356038ad6bc4bdce9f061"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-04-26T22:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "ecf1851c438f5d3e67d7e573"
+    },
+    "title": "Application crashes on startup",
+    "description": "Reported issue: Application crashes on startup. The application crashes when started. Please investigate the startup failure.",
+    "reportedByEmployeeId": {
+      "$oid": "acb5e0f527fb4486a7a881d0"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "50f2f576821662f53ae04b44"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-10-08T09:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "c44cf451bc9309109b601a7d"
+    },
+    "title": "Network is very slow",
+    "description": "Reported issue: Network is very slow. The employee reports a slow network connection. Please investigate network performance.",
+    "reportedByEmployeeId": {
+      "$oid": "1d56ec2e4604509bd9d1bc71"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-10-27T21:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "edfbe5581922ddca0283916f"
+    },
+    "title": "Cannot print in color",
+    "description": "Reported issue: Cannot print in color. The employee cannot print in colour. Please check the printer configuration.",
+    "reportedByEmployeeId": {
+      "$oid": "b41f81e462b9b60b1364b069"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "a54c60b8d64ed0ce3f7cfb56"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-05-27T12:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-06-03T12:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-06-03T15:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "64f905cd01360ce43c6b2336"
+    },
+    "title": "Unable to login to portal",
+    "description": "Reported issue: Unable to login to portal. The employee cannot sign in to the company portal. Please investigate the login problem.",
+    "reportedByEmployeeId": {
+      "$oid": "43a4fe680f5e8c99dc49b52d"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fcd9b5f3ab61191af387293f"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-03-29T23:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "caf62ba888c0ba53d533efb6"
+    },
+    "title": "Wifi keeps disconnecting",
+    "description": "Reported issue: Wifi keeps disconnecting. The WiFi connection keeps disconnecting. Please investigate the wireless connection.",
+    "reportedByEmployeeId": {
+      "$oid": "fc0c862e52dfe4a8e7ecbfef"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-07-27T04:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "c68757135dfdf4dc55b9ed53"
+    },
+    "title": "Cannot print in color",
+    "description": "Reported issue: Cannot print in color. The employee cannot print in colour. Please check the printer configuration.",
+    "reportedByEmployeeId": {
+      "$oid": "e19acbe997bd86423f2d8e31"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b17e06a06942c09081901892"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-11-05T16:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "5cc960666ec65a6ae7bf764f"
+    },
+    "title": "Mouse not working",
+    "description": "Reported issue: Mouse not working. The mouse is not working. Please check the device and its connection.",
+    "reportedByEmployeeId": {
+      "$oid": "acb5e0f527fb4486a7a881d0"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d3cb2e5d477bf6b7e51f4ed6"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-05-19T17:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-05-27T17:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "6523f61bb22f3a00113fce2e"
+    },
+    "title": "Software license expired",
+    "description": "Reported issue: Software license expired. The software reports that its licence has expired. Please check the licence.",
+    "reportedByEmployeeId": {
+      "$oid": "e5ec06262c64ee72e3d4618c"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "0781dd5ef8df306474ba7571"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-05-01T07:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-05-11T07:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-05-11T09:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "8c9684fc7e88ce59a12bc563"
+    },
+    "title": "Webcam not working in meetings",
+    "description": "Reported issue: Webcam not working in meetings. The webcam is not working during meetings. Please check the camera and application settings.",
+    "reportedByEmployeeId": {
+      "$oid": "89a38a2c8ae560a932b189ec"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "15957161e911d672318d9970"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2026-02-21T22:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2026-02-23T22:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "81a9df8aa1d886fc261e23c0"
+    },
+    "title": "Account locked out",
+    "description": "Reported issue: Account locked out. The employee account is locked. Please check the account and restore access.",
+    "reportedByEmployeeId": {
+      "$oid": "35b6bf7c2f37def11a19070c"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-08-09T10:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "9fea6f9e993c4a7703781573"
+    },
+    "title": "Headset not detected",
+    "description": "Reported issue: Headset not detected. The computer does not detect the headset. Please check its connection and audio settings.",
+    "reportedByEmployeeId": {
+      "$oid": "d16195aa31f45f8b61da8784"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "0781dd5ef8df306474ba7571"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-02-01T05:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-02-05T05:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-02-05T08:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "c3bf6b16bc29f6bec8ebad7c"
+    },
+    "title": "Database connection timeout",
+    "description": "Reported issue: Database connection timeout. A database connection is timing out. Please investigate the connection and database availability.",
+    "reportedByEmployeeId": {
+      "$oid": "ec86ebc600326223a15bd749"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-02-03T18:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "bc0393eb5e200c25f6ff3e2e"
+    },
+    "title": "Printer offline",
+    "description": "Reported issue: Printer offline. The printer is showing as offline. Please check its power and connection.",
+    "reportedByEmployeeId": {
+      "$oid": "fd63b939809fdfa8e2f2e8e4"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-08-24T14:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "0de1c9a4a7eac531ff92d318"
+    },
+    "title": "Application crashes on startup",
+    "description": "Reported issue: Application crashes on startup. The application crashes when started. Please investigate the startup failure.",
+    "reportedByEmployeeId": {
+      "$oid": "39fc8d9f03dfda77917c328d"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "ea23143b0a87f416437cb334"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-10-21T07:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-10-31T07:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "22838fb023b929196df36587"
+    },
+    "title": "Spam emails flooding inbox",
+    "description": "Reported issue: Spam emails flooding inbox. The employee reports excessive spam in their inbox. Please check the mail filtering settings.",
+    "reportedByEmployeeId": {
+      "$oid": "8a116c801661924d2f9a6ba3"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d366a14b27040442ad903d3f"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-09-12T11:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-09-13T11:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "675389e50b25568cc87dd17a"
+    },
+    "title": "Printer offline",
+    "description": "Reported issue: Printer offline. The printer is showing as offline. Please check its power and connection.",
+    "reportedByEmployeeId": {
+      "$oid": "1ddf763f9eae54916bd2e784"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "0781dd5ef8df306474ba7571"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-06-16T03:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-06-26T03:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-06-26T03:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "9d3146cee6cc1cd7b4c0bcbd"
+    },
+    "title": "Headset not detected",
+    "description": "Reported issue: Headset not detected. The computer does not detect the headset. Please check its connection and audio settings.",
+    "reportedByEmployeeId": {
+      "$oid": "3fe11e37b88700ab1a588226"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-03-03T15:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "19d75341cbc249722b12f239"
+    },
+    "title": "Backup failed overnight",
+    "description": "Reported issue: Backup failed overnight. The overnight backup failed. Please check the backup job and its error logs.",
+    "reportedByEmployeeId": {
+      "$oid": "6637d5ce8f4a7636787dffba"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b17e06a06942c09081901892"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-01-19T16:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-01-27T16:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-01-27T20:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "fb1dde9c3074fd0b79f7eb0a"
+    },
+    "title": "Disk space running low",
+    "description": "Reported issue: Disk space running low. The employee reports low disk space. Please review storage use and available capacity.",
+    "reportedByEmployeeId": {
+      "$oid": "30ec5958bd89d1e41f5d324c"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d7448f42d1771d0459e82e92"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-12-14T13:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-12-18T13:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-12-18T16:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "d9a8b31f0cab6ddf7d3be4a4"
+    },
+    "title": "Mouse not working",
+    "description": "Reported issue: Mouse not working. The mouse is not working. Please check the device and its connection.",
+    "reportedByEmployeeId": {
+      "$oid": "b4f235ff6d4e17c15dd54eb1"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "ea23143b0a87f416437cb334"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-09-04T12:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "65db9bc24a585be2661cee73"
+    },
+    "title": "Laptop won't turn on",
+    "description": "Reported issue: Laptop won't turn on. The laptop does not turn on. Please check the power supply and device.",
+    "reportedByEmployeeId": {
+      "$oid": "0f8c87dea33eb978900ea5e4"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "162c5dbc610f6403d438d2c2"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-08-06T22:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "7f79ea29081e75e7b457f81d"
+    },
+    "title": "Monitor flickering",
+    "description": "Reported issue: Monitor flickering. The monitor is flickering. Please check the display, cable and settings.",
+    "reportedByEmployeeId": {
+      "$oid": "bbb7bda24f06630db15ea8f5"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "162c5dbc610f6403d438d2c2"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-08-17T11:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-08-23T11:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "1240bba0d0b51179d08e0705"
+    },
+    "title": "Software license expired",
+    "description": "Reported issue: Software license expired. The software reports that its licence has expired. Please check the licence.",
+    "reportedByEmployeeId": {
+      "$oid": "2ef310b97404912ac1890cd7"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fb7eeec0a2fe29a171a704ca"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2026-02-22T06:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2026-03-02T06:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "70d9f1e58771d8e2375d2a69"
+    },
+    "title": "Laptop won't turn on",
+    "description": "Reported issue: Laptop won't turn on. The laptop does not turn on. Please check the power supply and device.",
+    "reportedByEmployeeId": {
+      "$oid": "b4dd56958e9f283963311976"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-03-18T00:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "e9217b6cc6a4ddc312775a68"
+    },
+    "title": "Password reset needed",
+    "description": "Reported issue: Password reset needed. The employee needs help resetting their account password.",
+    "reportedByEmployeeId": {
+      "$oid": "37b21e2132cbbdabd30a28b5"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "50f2f576821662f53ae04b44"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-05-26T05:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "5d6fdff362ab174754df6fb7"
+    },
+    "title": "Printer offline",
+    "description": "Reported issue: Printer offline. The printer is showing as offline. Please check its power and connection.",
+    "reportedByEmployeeId": {
+      "$oid": "34ec818f2d976c953d8e2a12"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d7448f42d1771d0459e82e92"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-04-04T09:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-04-13T09:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-04-13T12:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "eb66021c86545443ede70b6b"
+    },
+    "title": "Password reset needed",
+    "description": "Reported issue: Password reset needed. The employee needs help resetting their account password.",
+    "reportedByEmployeeId": {
+      "$oid": "5db77d80bf3dea1713082317"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fb7eeec0a2fe29a171a704ca"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-04-27T10:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-04-27T10:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-04-27T12:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "a443e9eff91361b847fcdfde"
+    },
+    "title": "Software license expired",
+    "description": "Reported issue: Software license expired. The software reports that its licence has expired. Please check the licence.",
+    "reportedByEmployeeId": {
+      "$oid": "8a116c801661924d2f9a6ba3"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d7448f42d1771d0459e82e92"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-08-09T07:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-08-14T07:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-08-14T11:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "cd40d4c751ac4f806261217a"
+    },
+    "title": "Unable to login to portal",
+    "description": "Reported issue: Unable to login to portal. The employee cannot sign in to the company portal. Please investigate the login problem.",
+    "reportedByEmployeeId": {
+      "$oid": "66b4be252a3e4581bf9b964e"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b80d5ece853e9c3b62dbf0f5"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-01-09T03:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "b5b832880d792fbb39c0f5f4"
+    },
+    "title": "Phone system issue",
+    "description": "Reported issue: Phone system issue. The employee reports a problem with the phone system. Please check the phone service and connection.",
+    "reportedByEmployeeId": {
+      "$oid": "715356038ad6bc4bdce9f061"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d366a14b27040442ad903d3f"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-03-28T21:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-04-05T21:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-04-06T00:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "d7db057c38b0f32456d72707"
+    },
+    "title": "Webcam not working in meetings",
+    "description": "Reported issue: Webcam not working in meetings. The webcam is not working during meetings. Please check the camera and application settings.",
+    "reportedByEmployeeId": {
+      "$oid": "64c7bcacb3116ff9bd614863"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "72ddd54d63b84cfb20944506"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-07-24T08:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "8be9f557bed11b22d7f11fc8"
+    },
+    "title": "Wifi keeps disconnecting",
+    "description": "Reported issue: Wifi keeps disconnecting. The WiFi connection keeps disconnecting. Please investigate the wireless connection.",
+    "reportedByEmployeeId": {
+      "$oid": "c775fe3139bdc69e5b685b6f"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "162c5dbc610f6403d438d2c2"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-11-07T18:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-11-08T18:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "60ec1171123b0f33cc7fc081"
+    },
+    "title": "Keyboard not responding",
+    "description": "Reported issue: Keyboard not responding. The keyboard is not responding. Please check the device and its connection.",
+    "reportedByEmployeeId": {
+      "$oid": "589d72c397a2a5f4c9c7a062"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "0781dd5ef8df306474ba7571"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-01-16T23:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "a0697bc63c1b8c2815b6df2b"
+    },
+    "title": "Account locked out",
+    "description": "Reported issue: Account locked out. The employee account is locked. Please check the account and restore access.",
+    "reportedByEmployeeId": {
+      "$oid": "d9034444099283fe1ff3ffc7"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "162c5dbc610f6403d438d2c2"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-06-13T09:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-06-22T09:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "5ada3db34d2a4a15acd0815e"
+    },
+    "title": "Two-factor authentication not working",
+    "description": "Reported issue: Two-factor authentication not working. The employee cannot complete two-factor authentication. Please investigate the verification problem.",
+    "reportedByEmployeeId": {
+      "$oid": "32843bf1ee4119822dfbcfa2"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-09-24T02:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "c1beb72b34d18f66c66fbfa7"
+    },
+    "title": "Request for new equipment",
+    "description": "Reported issue: Request for new equipment. The employee requests new equipment. Please review what is needed and arrange the next steps.",
+    "reportedByEmployeeId": {
+      "$oid": "ec86ebc600326223a15bd749"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b17e06a06942c09081901892"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-07-15T16:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-07-18T16:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-07-18T17:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "a949056f203ff3575b599239"
+    },
+    "title": "File corrupted",
+    "description": "Reported issue: File corrupted. The employee reports a corrupted file. Please investigate whether it can be recovered.",
+    "reportedByEmployeeId": {
+      "$oid": "3b625f5f45a84e75948128ae"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fcd9b5f3ab61191af387293f"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-02-22T02:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "a3fd19773bc6acc8c33878bb"
+    },
+    "title": "VPN connection failing",
+    "description": "Reported issue: VPN connection failing. The employee cannot establish a VPN connection. Please investigate remote access.",
+    "reportedByEmployeeId": {
+      "$oid": "d9034444099283fe1ff3ffc7"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-12-12T15:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "f34a7826c49c8fe5d4937797"
+    },
+    "title": "Software installation request",
+    "description": "Reported issue: Software installation request. The employee requests a software installation. Please review and arrange the installation.",
+    "reportedByEmployeeId": {
+      "$oid": "c2f2026b621de6d6bf05374f"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-04-15T11:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "29e0db16fc3c0bf5087244e6"
+    },
+    "title": "Account locked out",
+    "description": "Reported issue: Account locked out. The employee account is locked. Please check the account and restore access.",
+    "reportedByEmployeeId": {
+      "$oid": "32843bf1ee4119822dfbcfa2"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b80d5ece853e9c3b62dbf0f5"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-03-19T13:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "e73f5c904fd7ccf5344fd38d"
+    },
+    "title": "Cannot print in color",
+    "description": "Reported issue: Cannot print in color. The employee cannot print in colour. Please check the printer configuration.",
+    "reportedByEmployeeId": {
+      "$oid": "32843bf1ee4119822dfbcfa2"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-05-29T04:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "7286f24e6cc7aad8fbb79885"
+    },
+    "title": "Database connection timeout",
+    "description": "Reported issue: Database connection timeout. A database connection is timing out. Please investigate the connection and database availability.",
+    "reportedByEmployeeId": {
+      "$oid": "cc37a75d63c54c1d4cb361aa"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b80d5ece853e9c3b62dbf0f5"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-01-17T02:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "fa510ca5b94cbad712c76643"
+    },
+    "title": "Network is very slow",
+    "description": "Reported issue: Network is very slow. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "715356038ad6bc4bdce9f061"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d7448f42d1771d0459e82e92"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-07-21T07:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-07-29T07:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-07-29T08:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "b9050bfa90bd69282319735a"
+    },
+    "title": "Software installation request",
+    "description": "Reported issue: Software installation request. The employee requests a software installation. Please review and arrange the installation.",
+    "reportedByEmployeeId": {
+      "$oid": "71b6f24429bea5c1649ae51d"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b80d5ece853e9c3b62dbf0f5"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-08-22T12:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "4859a48466d1c5ac170282fb"
+    },
+    "title": "Phone system issue",
+    "description": "Reported issue: Phone system issue. The employee reports a problem with the phone system. Please check the phone service and connection.",
+    "reportedByEmployeeId": {
+      "$oid": "adeb215d1ddbc23fdedbaa6a"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-06-16T05:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "14e15c290e362b78ad370a73"
+    },
+    "title": "Software license expired",
+    "description": "Reported issue: Software license expired. The software reports that its licence has expired. Please check the licence.",
+    "reportedByEmployeeId": {
+      "$oid": "578ddda33e85d0a07fbf37bb"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d3cb2e5d477bf6b7e51f4ed6"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-04-10T17:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-04-14T17:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-04-14T21:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "89562b7901a3d6f89b78145e"
+    },
+    "title": "Spam emails flooding inbox",
+    "description": "Reported issue: Spam emails flooding inbox. The employee reports excessive spam in their inbox. Please check the mail filtering settings.",
+    "reportedByEmployeeId": {
+      "$oid": "adeb215d1ddbc23fdedbaa6a"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "15957161e911d672318d9970"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-10-24T05:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-10-24T05:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-10-24T07:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "0597a0c5adf6847a53882bf4"
+    },
+    "title": "Cannot print in color",
+    "description": "Reported issue: Cannot print in color. The employee cannot print in colour. Please check the printer configuration.",
+    "reportedByEmployeeId": {
+      "$oid": "a0b21fd650392a461094b378"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "ea23143b0a87f416437cb334"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-07-31T21:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-08-07T21:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-08-07T22:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "e0e893517de91977bd0916dc"
+    },
+    "title": "Cannot access shared drive",
+    "description": "Reported issue: Cannot access shared drive. The employee cannot access the shared drive. Please check connectivity and access permissions.",
+    "reportedByEmployeeId": {
+      "$oid": "5db77d80bf3dea1713082317"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "f850c1c780a2ea26895cba63"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-12-05T07:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "0d3b6205f4a8af835e7a3f5a"
+    },
+    "title": "Spam emails flooding inbox",
+    "description": "Reported issue: Spam emails flooding inbox. The employee reports excessive spam in their inbox. Please check the mail filtering settings.",
+    "reportedByEmployeeId": {
+      "$oid": "e19acbe997bd86423f2d8e31"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d7448f42d1771d0459e82e92"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-02-25T07:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "ce4f895154aa38545ad707f0"
+    },
+    "title": "Headset not detected",
+    "description": "Reported issue: Headset not detected. The computer does not detect the headset. Please check its connection and audio settings.",
+    "reportedByEmployeeId": {
+      "$oid": "66b4be252a3e4581bf9b964e"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-08-01T07:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "5e8733e4f34c74a7eba6e524"
+    },
+    "title": "Server unreachable",
+    "description": "Reported issue: Server unreachable. The server cannot be reached. Please investigate server availability and connectivity.",
+    "reportedByEmployeeId": {
+      "$oid": "43a4fe680f5e8c99dc49b52d"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "f850c1c780a2ea26895cba63"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-08-03T07:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-08-08T07:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "Critical"
+  },
+  {
+    "_id": {
+      "$oid": "696f796e1182926b713e7830"
+    },
+    "title": "Software license expired",
+    "description": "Reported issue: Software license expired. The software reports that its licence has expired. Please check the licence.",
+    "reportedByEmployeeId": {
+      "$oid": "4db2c2b7d18f8ca34ce1451a"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-08-13T10:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "fb3cd8b8740b849630908d81"
+    },
+    "title": "Network is very slow",
+    "description": "Reported issue: Network is very slow. The employee reports a slow network connection. Please investigate network performance.",
+    "reportedByEmployeeId": {
+      "$oid": "74b1a9fc95ff5a5f802b8df6"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-01-02T09:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "cdc08c622a60cb739592ff12"
+    },
+    "title": "Application crashes on startup",
+    "description": "Reported issue: Application crashes on startup. The application crashes when started. Please investigate the startup failure.",
+    "reportedByEmployeeId": {
+      "$oid": "589d72c397a2a5f4c9c7a062"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "50f2f576821662f53ae04b44"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2026-02-06T07:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2026-02-07T07:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "5c9cedc679ff7295f4ad0765"
+    },
+    "title": "Unable to login to portal",
+    "description": "Reported issue: Unable to login to portal. The employee cannot sign in to the company portal. Please investigate the login problem.",
+    "reportedByEmployeeId": {
+      "$oid": "88561296c2ec62d0d44e6903"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-05-03T17:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "6616efa85252251344e6867f"
+    },
+    "title": "Unable to login to portal",
+    "description": "Reported issue: Unable to login to portal. The employee cannot sign in to the company portal. Please investigate the login problem.",
+    "reportedByEmployeeId": {
+      "$oid": "032f70d118b8f1c232890ebc"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b17e06a06942c09081901892"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-12-03T05:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-12-04T05:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-12-04T07:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "8ecfbec27c234380a2330d27"
+    },
+    "title": "Server unreachable",
+    "description": "Reported issue: Server unreachable. The server cannot be reached. Please investigate server availability and connectivity.",
+    "reportedByEmployeeId": {
+      "$oid": "b4f235ff6d4e17c15dd54eb1"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-10-15T10:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "Critical"
+  },
+  {
+    "_id": {
+      "$oid": "6b190a637cb169d5d5555870"
+    },
+    "title": "Two-factor authentication not working",
+    "description": "Reported issue: Two-factor authentication not working. The employee cannot complete two-factor authentication. Please investigate the verification problem.",
+    "reportedByEmployeeId": {
+      "$oid": "caf5b69fe7b31d6de07e55e3"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b17e06a06942c09081901892"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-04-20T17:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-04-20T17:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-04-20T18:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "b2e71bb02888bdbf6976f816"
+    },
+    "title": "Account locked out",
+    "description": "Reported issue: Account locked out. The employee account is locked. Please check the account and restore access.",
+    "reportedByEmployeeId": {
+      "$oid": "0741d4661c1f71bc9ff4854f"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "50f2f576821662f53ae04b44"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-02-20T14:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-02-20T14:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "be062c09f98e8bd327d7777f"
+    },
+    "title": "VPN connection failing",
+    "description": "Reported issue: VPN connection failing. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "d3df2980d4c632e6e6383018"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "162c5dbc610f6403d438d2c2"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-09-24T22:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-09-30T22:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "23ce6bb92ba9bda596849b93"
+    },
+    "title": "Cannot access shared drive",
+    "description": "Reported issue: Cannot access shared drive. The employee cannot access the shared drive. Please check connectivity and access permissions.",
+    "reportedByEmployeeId": {
+      "$oid": "1ddf763f9eae54916bd2e784"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fcd9b5f3ab61191af387293f"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-02-16T22:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "4eb521a81ea8bf9e74bfab43"
+    },
+    "title": "Account locked out",
+    "description": "Reported issue: Account locked out. The employee account is locked. Please check the account and restore access.",
+    "reportedByEmployeeId": {
+      "$oid": "aa4cb30c4bbdf98aeb22eee1"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "a54c60b8d64ed0ce3f7cfb56"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-03-24T19:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-04-03T19:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-04-03T21:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "fcd21edf182e4c0ab45e75f7"
+    },
+    "title": "Password reset needed",
+    "description": "Reported issue: Password reset needed. The employee needs help resetting their account password.",
+    "reportedByEmployeeId": {
+      "$oid": "34ec818f2d976c953d8e2a12"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b80d5ece853e9c3b62dbf0f5"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-07-22T17:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-08-01T17:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-08-01T18:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "595e9d5c676b5b64d775e1fd"
+    },
+    "title": "Server unreachable",
+    "description": "Reported issue: Server unreachable. The server cannot be reached. Please investigate server availability and connectivity.",
+    "reportedByEmployeeId": {
+      "$oid": "79e5b294354436c8ad8b7976"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-03-13T05:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "Critical"
+  },
+  {
+    "_id": {
+      "$oid": "51d1a748b7ab5597371ac224"
+    },
+    "title": "Password reset needed",
+    "description": "Reported issue: Password reset needed. The employee needs help resetting their account password.",
+    "reportedByEmployeeId": {
+      "$oid": "6637d5ce8f4a7636787dffba"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "162c5dbc610f6403d438d2c2"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-08-22T18:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-08-27T18:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-08-27T20:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "4ede23306ad1c92a4690f235"
+    },
+    "title": "Webcam not working in meetings",
+    "description": "Reported issue: Webcam not working in meetings. The webcam is not working during meetings. Please check the camera and application settings.",
+    "reportedByEmployeeId": {
+      "$oid": "6637d5ce8f4a7636787dffba"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-07-17T15:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "15ed6b2342b43e07a6eec22b"
+    },
+    "title": "Account locked out",
+    "description": "Reported issue: Account locked out. The employee account is locked. Please check the account and restore access.",
+    "reportedByEmployeeId": {
+      "$oid": "c2f2026b621de6d6bf05374f"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "15957161e911d672318d9970"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-05-06T03:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-05-10T03:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-05-10T06:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "7bce3c1ac822fc069bd62178"
+    },
+    "title": "Mouse not working",
+    "description": "Reported issue: Mouse not working. The mouse is not working. Please check the device and its connection.",
+    "reportedByEmployeeId": {
+      "$oid": "4db2c2b7d18f8ca34ce1451a"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "f850c1c780a2ea26895cba63"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-11-06T02:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "5ff9e759ef109389df9d0b68"
+    },
+    "title": "VPN connection failing",
+    "description": "Reported issue: VPN connection failing. The employee cannot establish a VPN connection. Please investigate remote access.",
+    "reportedByEmployeeId": {
+      "$oid": "b4f235ff6d4e17c15dd54eb1"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b80d5ece853e9c3b62dbf0f5"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-02-16T15:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-02-26T15:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "6bbaf347cc52e7b98bd1b50a"
+    },
+    "title": "Network is very slow",
+    "description": "Reported issue: Network is very slow. The employee reports a slow network connection. Please investigate network performance.",
+    "reportedByEmployeeId": {
+      "$oid": "7601442593b0a4c6371f4c9a"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "ea23143b0a87f416437cb334"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-08-16T19:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-08-24T19:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-08-24T20:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "ef00cc0cd50100f4b275ede7"
+    },
+    "title": "Unable to login to portal",
+    "description": "Reported issue: Unable to login to portal. The employee cannot sign in to the company portal. Please investigate the login problem.",
+    "reportedByEmployeeId": {
+      "$oid": "bcb52bf1efc5f538aabbab97"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "50f2f576821662f53ae04b44"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-04-27T10:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-05-07T10:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-05-07T10:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "15d36c3c2d4d3e0682a89c7d"
+    },
+    "title": "File corrupted",
+    "description": "Reported issue: File corrupted. The employee reports a corrupted file. Please investigate whether it can be recovered.",
+    "reportedByEmployeeId": {
+      "$oid": "eec941cf9bd51701b0b1d452"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d366a14b27040442ad903d3f"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-07-22T21:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "6e709479c01fa1dc6560cf17"
+    },
+    "title": "Webcam not working in meetings",
+    "description": "Reported issue: Webcam not working in meetings. The webcam is not working during meetings. Please check the camera and application settings.",
+    "reportedByEmployeeId": {
+      "$oid": "715356038ad6bc4bdce9f061"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fb7eeec0a2fe29a171a704ca"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-04-14T01:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-04-14T01:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-04-14T02:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "0de68557eac1328ed739f121"
+    },
+    "title": "Laptop won't turn on",
+    "description": "Reported issue: Laptop won't turn on. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "aa4cb30c4bbdf98aeb22eee1"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fb7eeec0a2fe29a171a704ca"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-04-30T02:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "adc98e486f510dbee2f57a42"
+    },
+    "title": "Keyboard not responding",
+    "description": "Reported issue: Keyboard not responding. The keyboard is not responding. Please check the device and its connection.",
+    "reportedByEmployeeId": {
+      "$oid": "e19acbe997bd86423f2d8e31"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "f850c1c780a2ea26895cba63"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-12-15T07:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-12-20T07:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-12-20T11:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "e8760d2055d3e6ebe91bebf7"
+    },
+    "title": "Wifi keeps disconnecting",
+    "description": "Reported issue: Wifi keeps disconnecting. The WiFi connection keeps disconnecting. Please investigate the wireless connection.",
+    "reportedByEmployeeId": {
+      "$oid": "f824c6caba347a9b8d019726"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-09-04T13:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "a7b68b33a849bddd12eebeea"
+    },
+    "title": "Screen resolution issue",
+    "description": "Reported issue: Screen resolution issue. The employee reports an incorrect screen resolution. Please check the display settings.",
+    "reportedByEmployeeId": {
+      "$oid": "0741d4661c1f71bc9ff4854f"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b80d5ece853e9c3b62dbf0f5"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-01-04T06:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-01-08T06:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-01-08T08:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "90e67ae2bce4a7ad4a3703c9"
+    },
+    "title": "Phone system issue",
+    "description": "Reported issue: Phone system issue. The employee reports a problem with the phone system. Please check the phone service and connection.",
+    "reportedByEmployeeId": {
+      "$oid": "ef2bb64152886da6dc6743d0"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "162c5dbc610f6403d438d2c2"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-08-24T02:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-08-27T02:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-08-27T06:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "610b0eb1b9b26c0ded4a645e"
+    },
+    "title": "File corrupted",
+    "description": "Reported issue: File corrupted. The employee reports a corrupted file. Please investigate whether it can be recovered.",
+    "reportedByEmployeeId": {
+      "$oid": "37b21e2132cbbdabd30a28b5"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d7448f42d1771d0459e82e92"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2026-01-10T21:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2026-01-15T21:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "3c3daadb85f4ea1bb3d98001"
+    },
+    "title": "Webcam not working in meetings",
+    "description": "Reported issue: Webcam not working in meetings. The webcam is not working during meetings. Please check the camera and application settings.",
+    "reportedByEmployeeId": {
+      "$oid": "7bee16446f01a159d949e656"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b80d5ece853e9c3b62dbf0f5"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-04-14T05:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "eb50bc283cf496afa06a2d91"
+    },
+    "title": "Phone system issue",
+    "description": "Reported issue: Phone system issue. The employee reports a problem with the phone system. Please check the phone service and connection.",
+    "reportedByEmployeeId": {
+      "$oid": "032f70d118b8f1c232890ebc"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fb7eeec0a2fe29a171a704ca"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-03-22T14:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-04-01T14:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-04-01T17:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "132f5effd1daf0cd34449747"
+    },
+    "title": "Network is very slow",
+    "description": "Reported issue: Network is very slow. The employee reports a slow network connection. Please investigate network performance.",
+    "reportedByEmployeeId": {
+      "$oid": "e5ec06262c64ee72e3d4618c"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d3cb2e5d477bf6b7e51f4ed6"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-09-16T02:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "57c96e921de9492e6ef43fc3"
+    },
+    "title": "Laptop won't turn on",
+    "description": "Reported issue: Laptop won't turn on. The laptop does not turn on. Please check the power supply and device.",
+    "reportedByEmployeeId": {
+      "$oid": "f824c6caba347a9b8d019726"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "0781dd5ef8df306474ba7571"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-06-30T05:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-07-03T05:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-07-03T06:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "143609586d400ed21b7d9bec"
+    },
+    "title": "Backup failed overnight",
+    "description": "Reported issue: Backup failed overnight. The overnight backup failed. Please check the backup job and its error logs.",
+    "reportedByEmployeeId": {
+      "$oid": "6637d5ce8f4a7636787dffba"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "72ddd54d63b84cfb20944506"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-05-30T21:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "c512cedae44e4d267250e159"
+    },
+    "title": "Request for new equipment",
+    "description": "Reported issue: Request for new equipment. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "3fe11e37b88700ab1a588226"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "a54c60b8d64ed0ce3f7cfb56"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-09-19T00:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-09-21T00:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-09-21T03:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "3fb1a38641b6929e641b18fb"
+    },
+    "title": "Software license expired",
+    "description": "Reported issue: Software license expired. The software reports that its licence has expired. Please check the licence.",
+    "reportedByEmployeeId": {
+      "$oid": "eda1f6063249037dfc0d631b"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-01-21T18:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "a93f418649faab7916439ba7"
+    },
+    "title": "Screen resolution issue",
+    "description": "Reported issue: Screen resolution issue. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "578ddda33e85d0a07fbf37bb"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "f850c1c780a2ea26895cba63"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-04-19T07:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-04-21T07:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-04-21T11:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "a11f2032a63dc6c9a6005482"
+    },
+    "title": "Unable to login to portal",
+    "description": "Reported issue: Unable to login to portal. The employee cannot sign in to the company portal. Please investigate the login problem.",
+    "reportedByEmployeeId": {
+      "$oid": "a0b21fd650392a461094b378"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "50f2f576821662f53ae04b44"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-07-06T06:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-07-16T06:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-07-16T08:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "73304676a8a9d60a61266763"
+    },
+    "title": "Headset not detected",
+    "description": "Reported issue: Headset not detected. The computer does not detect the headset. Please check its connection and audio settings.",
+    "reportedByEmployeeId": {
+      "$oid": "0f8c87dea33eb978900ea5e4"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "0781dd5ef8df306474ba7571"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2026-03-27T19:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2026-04-04T19:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "43871e6bb36da93153aa6aa8"
+    },
+    "title": "Password reset needed",
+    "description": "Reported issue: Password reset needed. The employee needs help resetting their account password.",
+    "reportedByEmployeeId": {
+      "$oid": "b2f0a46d27d8d43f6241c3f2"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fb7eeec0a2fe29a171a704ca"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-06-02T03:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "b1f85032ae6001243e5c6a45"
+    },
+    "title": "Password reset needed",
+    "description": "Reported issue: Password reset needed. The employee needs help resetting their account password.",
+    "reportedByEmployeeId": {
+      "$oid": "bbb7bda24f06630db15ea8f5"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "ea23143b0a87f416437cb334"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-01-13T22:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "54255b70a3bf3cb61b26f36e"
+    },
+    "title": "Spam emails flooding inbox",
+    "description": "Reported issue: Spam emails flooding inbox. The employee reports excessive spam in their inbox. Please check the mail filtering settings.",
+    "reportedByEmployeeId": {
+      "$oid": "95d8cb38b8dfae3f60800a40"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b17e06a06942c09081901892"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-05-24T15:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-05-29T15:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "b73db04094ff0087a513fb21"
+    },
+    "title": "Server unreachable",
+    "description": "Reported issue: Server unreachable. The server cannot be reached. Please investigate server availability and connectivity.",
+    "reportedByEmployeeId": {
+      "$oid": "89a38a2c8ae560a932b189ec"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d7448f42d1771d0459e82e92"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-04-24T23:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-05-02T23:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "Critical"
+  },
+  {
+    "_id": {
+      "$oid": "3691404c2856ecb65f500b02"
+    },
+    "title": "Cannot access shared drive",
+    "description": "Reported issue: Cannot access shared drive. The employee cannot access the shared drive. Please check connectivity and access permissions.",
+    "reportedByEmployeeId": {
+      "$oid": "b4f235ff6d4e17c15dd54eb1"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-01-23T00:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "fcd2195f79fb2c9653887f44"
+    },
+    "title": "Unable to login to portal",
+    "description": "Reported issue: Unable to login to portal. The employee cannot sign in to the company portal. Please investigate the login problem.",
+    "reportedByEmployeeId": {
+      "$oid": "0f8c87dea33eb978900ea5e4"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fb7eeec0a2fe29a171a704ca"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2026-02-01T13:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2026-02-01T13:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "87c3c2804a5de64d1f7e9bf9"
+    },
+    "title": "Account locked out",
+    "description": "Reported issue: Account locked out. The employee account is locked. Please check the account and restore access.",
+    "reportedByEmployeeId": {
+      "$oid": "e48521c07870ac9a75ccf149"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d3cb2e5d477bf6b7e51f4ed6"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-03-01T09:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-03-06T09:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "16c7c1d5ec1ae004118480a8"
+    },
+    "title": "Software installation request",
+    "description": "Reported issue: Software installation request. The employee requests a software installation. Please review and arrange the installation.",
+    "reportedByEmployeeId": {
+      "$oid": "609c6a6086ef565dd4ce8760"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fcd9b5f3ab61191af387293f"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-11-15T16:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-11-20T16:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-11-20T17:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "ee2f173421cad8cb7137f637"
+    },
+    "title": "Account locked out",
+    "description": "Reported issue: Account locked out. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "13370d831067cc8672ebe8e2"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fcd9b5f3ab61191af387293f"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-06-23T03:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-06-30T03:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-06-30T03:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "199f47019538ec262e6c5c9b"
+    },
+    "title": "File corrupted",
+    "description": "Reported issue: File corrupted. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "c775fe3139bdc69e5b685b6f"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b80d5ece853e9c3b62dbf0f5"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-11-18T09:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-11-20T09:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-11-20T12:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "810ce836949783b920c1010f"
+    },
+    "title": "Webcam not working in meetings",
+    "description": "Reported issue: Webcam not working in meetings. The webcam is not working during meetings. Please check the camera and application settings.",
+    "reportedByEmployeeId": {
+      "$oid": "f620c9d2e8de30cd3ea5f01a"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-04-20T15:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "7da642851b7fb1055114a329"
+    },
+    "title": "Disk space running low",
+    "description": "Reported issue: Disk space running low. The employee reports low disk space. Please review storage use and available capacity.",
+    "reportedByEmployeeId": {
+      "$oid": "0741d4661c1f71bc9ff4854f"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d366a14b27040442ad903d3f"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-06-06T01:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "545322407d02d0ff0e831bd8"
+    },
+    "title": "Cannot print in color",
+    "description": "Reported issue: Cannot print in color. The employee cannot print in colour. Please check the printer configuration.",
+    "reportedByEmployeeId": {
+      "$oid": "79e5b294354436c8ad8b7976"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "162c5dbc610f6403d438d2c2"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-04-08T11:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-04-15T11:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-04-15T13:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "6bd9219b1aee3b4c50f41dbc"
+    },
+    "title": "VPN connection failing",
+    "description": "Reported issue: VPN connection failing. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "b4f235ff6d4e17c15dd54eb1"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-01-19T16:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "6fba6f527f412154dfd93134"
+    },
+    "title": "Unable to login to portal",
+    "description": "Reported issue: Unable to login to portal. The employee cannot sign in to the company portal. Please investigate the login problem.",
+    "reportedByEmployeeId": {
+      "$oid": "aa4cb30c4bbdf98aeb22eee1"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "f850c1c780a2ea26895cba63"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-08-22T03:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "ac22c31ab08c7c4a1964be77"
+    },
+    "title": "Network is very slow",
+    "description": "Reported issue: Network is very slow. The employee reports a slow network connection. Please investigate network performance.",
+    "reportedByEmployeeId": {
+      "$oid": "5db77d80bf3dea1713082317"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b80d5ece853e9c3b62dbf0f5"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-07-27T18:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-07-28T18:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-07-28T22:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "e9ac5741f4da5588f31d0c85"
+    },
+    "title": "File corrupted",
+    "description": "Reported issue: File corrupted. The employee reports a corrupted file. Please investigate whether it can be recovered.",
+    "reportedByEmployeeId": {
+      "$oid": "66b4be252a3e4581bf9b964e"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "72ddd54d63b84cfb20944506"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2026-05-21T14:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2026-05-21T14:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "ca9c297f4682c74a86555edf"
+    },
+    "title": "Wifi keeps disconnecting",
+    "description": "Reported issue: Wifi keeps disconnecting. The WiFi connection keeps disconnecting. Please investigate the wireless connection.",
+    "reportedByEmployeeId": {
+      "$oid": "e48521c07870ac9a75ccf149"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "f850c1c780a2ea26895cba63"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-07-05T06:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-07-13T06:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-07-13T09:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "ad1a7413b3290a36647a6366"
+    },
+    "title": "Account locked out",
+    "description": "Reported issue: Account locked out. The employee account is locked. Please check the account and restore access.",
+    "reportedByEmployeeId": {
+      "$oid": "ca5142f3ef5ec5cdbfa35e16"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "162c5dbc610f6403d438d2c2"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-09-08T17:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-09-09T17:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "99b2ce26517cae8bc9fd351e"
+    },
+    "title": "Cannot access shared drive",
+    "description": "Reported issue: Cannot access shared drive. The employee cannot access the shared drive. Please check connectivity and access permissions.",
+    "reportedByEmployeeId": {
+      "$oid": "fef4d90dbbbcd828e35663a8"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "a54c60b8d64ed0ce3f7cfb56"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-03-22T09:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "a8a4f8162522419e58c720b9"
+    },
+    "title": "Database connection timeout",
+    "description": "Reported issue: Database connection timeout. A database connection is timing out. Please investigate the connection and database availability.",
+    "reportedByEmployeeId": {
+      "$oid": "cd5a6e961b069cd4b8018882"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fcd9b5f3ab61191af387293f"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2026-04-26T15:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2026-05-05T15:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "48ac12b2b2558a39bce79db0"
+    },
+    "title": "Cannot print in color",
+    "description": "Reported issue: Cannot print in color. The employee cannot print in colour. Please check the printer configuration.",
+    "reportedByEmployeeId": {
+      "$oid": "35b6bf7c2f37def11a19070c"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "f850c1c780a2ea26895cba63"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-01-29T12:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-01-30T12:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-01-30T16:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "4a914cf161b0491d1d6d7454"
+    },
+    "title": "Printer offline",
+    "description": "Reported issue: Printer offline. The printer is showing as offline. Please check its power and connection.",
+    "reportedByEmployeeId": {
+      "$oid": "9463f461233f222e653e8d0a"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "72ddd54d63b84cfb20944506"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2026-03-10T09:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-03-17T09:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-03-17T10:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "b09e2583e684da8710866169"
+    },
+    "title": "File corrupted",
+    "description": "Reported issue: File corrupted. The employee reports a corrupted file. Please investigate whether it can be recovered.",
+    "reportedByEmployeeId": {
+      "$oid": "fd63b939809fdfa8e2f2e8e4"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "a54c60b8d64ed0ce3f7cfb56"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-07-09T01:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-07-13T01:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-07-13T01:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "d3b427480a08aeb45abc313b"
+    },
+    "title": "Backup failed overnight",
+    "description": "Reported issue: Backup failed overnight. The overnight backup failed. Please check the backup job and its error logs.",
+    "reportedByEmployeeId": {
+      "$oid": "43a4fe680f5e8c99dc49b52d"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-09-04T07:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "c4f4f950a0d7e4dd681a7173"
+    },
+    "title": "Backup failed overnight",
+    "description": "Reported issue: Backup failed overnight. The overnight backup failed. Please check the backup job and its error logs.",
+    "reportedByEmployeeId": {
+      "$oid": "37b21e2132cbbdabd30a28b5"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b17e06a06942c09081901892"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-12-23T16:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2026-01-01T16:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2026-01-01T18:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "ab4e8b3c5eb66dad824077c0"
+    },
+    "title": "Database connection timeout",
+    "description": "Reported issue: Database connection timeout. A database connection is timing out. Please investigate the connection and database availability.",
+    "reportedByEmployeeId": {
+      "$oid": "e48521c07870ac9a75ccf149"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fb7eeec0a2fe29a171a704ca"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-06-07T13:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-06-14T13:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-06-14T17:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "d6cbad52e3441ed975db2894"
+    },
+    "title": "Application crashes on startup",
+    "description": "Reported issue: Application crashes on startup. The application crashes when started. Please investigate the startup failure.",
+    "reportedByEmployeeId": {
+      "$oid": "adeb215d1ddbc23fdedbaa6a"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "f850c1c780a2ea26895cba63"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-05-05T15:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "df7b32ee036f5b92f21e3af0"
+    },
+    "title": "Application crashes on startup",
+    "description": "Reported issue: Application crashes on startup. The application crashes when started. Please investigate the startup failure.",
+    "reportedByEmployeeId": {
+      "$oid": "b41f81e462b9b60b1364b069"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "ea23143b0a87f416437cb334"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-06-11T22:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-06-15T22:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "44a0da11a0707c6f816c9b46"
+    },
+    "title": "Software installation request",
+    "description": "Reported issue: Software installation request. The employee requests a software installation. Please review and arrange the installation.",
+    "reportedByEmployeeId": {
+      "$oid": "d3df2980d4c632e6e6383018"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d7448f42d1771d0459e82e92"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-04-03T17:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "628ac6458a3df3826e736479"
+    },
+    "title": "Cannot print in color",
+    "description": "Reported issue: Cannot print in color. The employee cannot print in colour. Please check the printer configuration.",
+    "reportedByEmployeeId": {
+      "$oid": "95d8cb38b8dfae3f60800a40"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b80d5ece853e9c3b62dbf0f5"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-03-07T18:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Low"
+  },
+  {
+    "_id": {
+      "$oid": "e11bfd54417fd932dc80cba7"
+    },
+    "title": "Network is very slow",
+    "description": "Reported issue: Network is very slow. The employee reports a slow network connection. Please investigate network performance.",
+    "reportedByEmployeeId": {
+      "$oid": "6116b77cafb4923a69330811"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-06-29T11:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Network",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "4bbc36a97b3586e67aeb815e"
+    },
+    "title": "Unable to login to portal",
+    "description": "Reported issue: Unable to login to portal. The employee cannot sign in to the company portal. Please investigate the login problem.",
+    "reportedByEmployeeId": {
+      "$oid": "fad4a8bb82b64208bf6bc5ef"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "d366a14b27040442ad903d3f"
+    },
+    "statusInfo": {
+      "status": "Resolved",
+      "dateReported": {
+        "$date": "2025-11-18T00:00:00.000Z"
+      },
+      "solvedAt": {
+        "$date": "2025-11-25T00:00:00.000Z"
+      },
+      "closedAt": {
+        "$date": "2025-11-25T00:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "312b9407d3d833ebc37d37cd"
+    },
+    "title": "Headset not detected",
+    "description": "Reported issue: Headset not detected. Needs investigation by service desk team.",
+    "reportedByEmployeeId": {
+      "$oid": "aecea41221211513017c317f"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "162c5dbc610f6403d438d2c2"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-02-16T22:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-02-17T22:00:00.000Z"
+      }
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "4c15e22e70f3a412f442050d"
+    },
+    "title": "Laptop won't turn on",
+    "description": "Reported issue: Laptop won't turn on. The laptop does not turn on. Please check the power supply and device.",
+    "reportedByEmployeeId": {
+      "$oid": "bdb65544c4793c8669191b0d"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fcd9b5f3ab61191af387293f"
+    },
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-01-11T22:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "88e1adaa9bc35ccd2854d5eb"
+    },
+    "title": "Disk space running low",
+    "description": "Reported issue: Disk space running low. The employee reports low disk space. Please review storage use and available capacity.",
+    "reportedByEmployeeId": {
+      "$oid": "bdb65544c4793c8669191b0d"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "b17e06a06942c09081901892"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2025-12-06T01:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2025-12-06T01:00:00.000Z"
+      }
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "7e98917ce0dc10a5363e3e4a"
+    },
+    "title": "Database connection timeout",
+    "description": "Reported issue: Database connection timeout. A database connection is timing out. Please investigate the connection and database availability.",
+    "reportedByEmployeeId": {
+      "$oid": "e5ec06262c64ee72e3d4618c"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-05-24T23:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "High"
+  },
+  {
+    "_id": {
+      "$oid": "40295fa68e2c8e12a2c03b51"
+    },
+    "title": "Disk space running low",
+    "description": "Reported issue: Disk space running low. The employee reports low disk space. Please review storage use and available capacity.",
+    "reportedByEmployeeId": {
+      "$oid": "609c6a6086ef565dd4ce8760"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2026-03-22T06:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Software",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "8784303e86b51f023c956c0c"
+    },
+    "title": "Printer offline",
+    "description": "Reported issue: Printer offline. The printer is showing as offline. Please check its power and connection.",
+    "reportedByEmployeeId": {
+      "$oid": "1def3e4aff55270a3b762f83"
+    },
+    "assignedToEmployeeId": null,
+    "statusInfo": {
+      "status": "Open",
+      "dateReported": {
+        "$date": "2025-01-18T13:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": null
+    },
+    "type": "Hardware",
+    "priority": "Normal"
+  },
+  {
+    "_id": {
+      "$oid": "2b5b4757dabf0541552bc35f"
+    },
+    "title": "Network is very slow",
+    "description": "Reported issue: Network is very slow. The employee reports a slow network connection. Please investigate network performance.",
+    "reportedByEmployeeId": {
+      "$oid": "43a4fe680f5e8c99dc49b52d"
+    },
+    "assignedToEmployeeId": {
+      "$oid": "fcd9b5f3ab61191af387293f"
+    },
+    "statusInfo": {
+      "status": "Closed",
+      "dateReported": {
+        "$date": "2026-03-03T14:00:00.000Z"
+      },
+      "solvedAt": null,
+      "closedAt": {
+        "$date": "2026-03-06T14:00:00.000Z"
+      }
+    },
+    "type": "Network",
+    "priority": "High"
+  }
+]

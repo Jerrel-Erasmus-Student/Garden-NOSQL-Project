@@ -1,0 +1,13 @@
+@model LoginForm
+@{ ViewData["Title"] = "Sign in"; }
+<section class="login-shell">
+    <div class="login-story"><p class="eyebrow">GARDEN GROUP</p><h1>Service desk</h1><p>Report a problem and check the status of your tickets.</p><p class="muted">NoSQL project · Incident management</p></div>
+    <div class="card login-card"><h2>Sign in</h2><p class="muted">Use your employee account.</p>
+    <form asp-action="Login" method="post">
+        <div asp-validation-summary="All" class="validation" role="alert"></div>
+        <input asp-for="ReturnUrl" type="hidden" />
+        <div class="field"><label asp-for="Email">Email address</label><input asp-for="Email" autocomplete="username" placeholder="you@gardengroup.com" required /><span asp-validation-for="Email"></span></div>
+        <div class="field"><label asp-for="Password"></label><input asp-for="Password" autocomplete="current-password" required /><span asp-validation-for="Password"></span></div>
+        <button class="button full" type="submit">Sign in <span aria-hidden="true">→</span></button>
+    </form><p class="fine">Need an account or help signing in? Contact your service desk.</p></div>
+</section>

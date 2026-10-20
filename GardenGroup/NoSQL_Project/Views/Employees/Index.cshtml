@@ -1,0 +1,6 @@
+@model List<Employee>
+@{ ViewData["Title"] = "Employees"; }
+<div class="page-heading"><div><h1>Employees</h1><p class="muted">Manage employee accounts and roles.</p></div><a class="button" asp-action="Create">+ Add employee</a></div>
+<section class="card"><div class="section-heading"><h2>@Model.Count employees</h2></div><div class="table-wrap"><table><thead><tr><th>Name</th><th>Contact</th><th>Branch</th><th>Role</th><th>Actions</th></tr></thead><tbody>
+@foreach (var employee in Model) { <tr><td class="ticket-title">@employee.DisplayName</td><td>@employee.Contact.Email<small>@employee.Contact.Phone</small></td><td>@employee.Location.Name<small>@employee.Location.City</small></td><td><span class="badge @(employee.Role == Roles.ServiceDesk ? "resolved" : "closed")">@(employee.Role == Roles.ServiceDesk ? "Service desk" : "Regular employee")</span></td><td><div class="row-actions"><a class="text-link" asp-action="Edit" asp-route-id="@employee.Id">Edit</a><a class="text-link danger" asp-action="Delete" asp-route-id="@employee.Id">Delete</a></div></td></tr> }
+</tbody></table></div></section>

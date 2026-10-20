@@ -1,0 +1,14 @@
+@model TicketDetails
+@{ var ticket = Model.Ticket; ViewData["Title"] = ticket.Subject; }
+<a class="back-link" asp-action="Index" asp-route-archived="@(ticket.Status != TicketOptions.Open)">← @(ticket.Status == TicketOptions.Open ? "Open tickets" : "Archived tickets")</a><div class="page-heading"><div><p class="eyebrow">INCIDENT #@ticket.Id.ToString()[^6..]</p><h1>@ticket.Subject</h1><p class="muted">Reported @ticket.Dates.DateReported.ToString("dd MMM yyyy, HH:mm") UTC by @Model.Reporter</p></div><span class="badge large @ticket.Status.ToLowerInvariant()">@ticket.Status</span></div>
+<div class="details-grid"><section class="card"><p class="eyebrow">THE DETAILS</p><h2>What happened</h2><p class="description">@ticket.Description</p></section><aside class="card"><h2>Ticket information</h2><dl>
+<dt>Priority</dt><dd><span class="priority @ticket.Priority.ToLowerInvariant()">@ticket.Priority</span></dd><dt>Type</dt><dd>@ticket.Type</dd><dt>Assigned to</dt><dd>@Model.Assignee</dd><dt>Deadline (UTC)</dt><dd>@(ticket.Deadline == default ? "Not set" : ticket.Deadline.ToString("dd MMM yyyy"))</dd><dt>Solved (UTC)</dt><dd>@(ticket.Dates.SolvedAt?.ToString("dd MMM yyyy, HH:mm") ?? "Not resolved")</dd><dt>Closed (UTC)</dt><dd>@(ticket.Dates.ClosedAt?.ToString("dd MMM yyyy, HH:mm") ?? "Not closed")</dd></dl></aside></div>
+@if (User.IsInRole(Roles.ServiceDesk)) {
+<div class="form-actions"><a class="button" asp-action="Edit" asp-route-id="@ticket.Id">Edit ticket</a>
+@if (ticket.Status != TicketOptions.Closed) { <form asp-action="Close" asp-route-id="@ticket.Id" method="post"><button class="button ghost" type="submit">Close ticket</button></form> }
+<a class="text-link danger" asp-action="Delete" asp-route-id="@ticket.Id">Permanently delete…</a></div>
+<section class="card transfer-form"><h2>Transfer ticket</h2><p class="muted">Pass responsibility to another service desk employee while preserving the ticket's status and dates.</p>
+@if (Model.TransferRecipients.Count > 0) {
+<form asp-action="Transfer" asp-route-id="@ticket.Id" method="post" class="search-bar"><div class="field search-field"><label for="recipientId">New assignee</label><select id="recipientId" name="recipientId" asp-items="Model.TransferRecipients" required><option value="">Choose an employee</option></select></div><button class="button ghost" type="submit">Transfer ticket</button></form>
+} else { <p>No other service desk employees are available.</p> }</section>
+}

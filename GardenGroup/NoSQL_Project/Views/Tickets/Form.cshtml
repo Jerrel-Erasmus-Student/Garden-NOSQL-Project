@@ -1,0 +1,20 @@
+@model TicketForm
+@{ var edit = Model.Id != null; var desk = User.IsInRole(Roles.ServiceDesk); ViewData["Title"] = edit ? "Edit ticket" : "Report an issue"; }
+<a class="back-link" asp-action="Index">← Tickets</a><div class="page-heading"><div><h1>@ViewData["Title"]</h1><p class="muted">Enter the details of the problem.</p></div></div>
+<form asp-action="@(edit ? "Edit" : "Create")" asp-route-id="@Model.Id" method="post" class="card form-card">
+<div asp-validation-summary="All" class="validation" role="alert"></div>
+<div class="field"><label asp-for="Subject">Subject *</label><input asp-for="Subject" required minlength="3" maxlength="120" placeholder="A short description of the issue" /></div>
+<div class="field"><label asp-for="Description">What happened? *</label><textarea asp-for="Description" required minlength="5" maxlength="5000" rows="6" placeholder="Describe the issue, where it happened, and what you have tried."></textarea></div>
+<div class="form-grid"><div class="field"><label asp-for="Type">Type *</label><select asp-for="Type">@foreach (var value in TicketOptions.Types) { <option value="@value">@value</option> }</select></div>
+<div class="field"><label asp-for="Priority">Priority *</label><select asp-for="Priority">@foreach (var value in TicketOptions.Priorities) { <option value="@value">@value</option> }</select></div>
+<div class="field"><label asp-for="EventDate">Date of event (UTC) *</label><input asp-for="EventDate" type="date" required min="2000-01-01" max="@DateTime.UtcNow.ToString("yyyy-MM-dd")" /></div>
+<div class="field"><label asp-for="Deadline">Target deadline (UTC) *</label><input asp-for="Deadline" type="date" required /></div>
+@if (desk) {
+<div class="field"><label asp-for="ReporterId">Reported by *</label><select asp-for="ReporterId" asp-items="Model.Employees" required></select></div>
+<div class="field"><label asp-for="AssigneeId">Assigned to</label><select asp-for="AssigneeId" asp-items="Model.ServiceDeskEmployees"><option value="">Unassigned</option></select></div>
+@if (edit) { <div class="field"><label asp-for="Status">Status *</label><select asp-for="Status">@foreach (var value in TicketOptions.Statuses) { <option value="@value">@value</option> }</select></div> }
+}
+</div>
+<p class="fine">@(edit ? "Resolving records a solved date. Closing preserves whether the incident was solved. Reopening clears the completion dates." : "New tickets start as open. The service desk will review your report.")</p>
+<div class="form-actions"><button class="button" type="submit">@(edit ? "Save changes" : "Submit ticket")</button><a class="button ghost" asp-action="Index">Cancel</a></div>
+</form>

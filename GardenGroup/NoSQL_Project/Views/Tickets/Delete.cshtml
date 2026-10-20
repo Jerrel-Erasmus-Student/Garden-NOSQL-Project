@@ -1,0 +1,4 @@
+@model Ticket
+@{ ViewData["Title"] = "Delete ticket"; }
+<section class="card form-card"><p class="eyebrow">PERMANENT DELETION</p><h1>Delete this ticket?</h1><p><strong>@Model.Subject</strong></p><p>Closing a ticket keeps its history and is the normal workflow. Permanent deletion removes the incident and its dashboard contribution.</p>
+<form asp-action="Delete" asp-route-id="@Model.Id" method="post"><div asp-validation-summary="All" class="validation" role="alert"></div><label class="checkbox"><input type="checkbox" name="confirm" value="true" required /> I confirm permanent deletion.</label><div class="form-actions"><button class="button destructive" type="submit">Delete permanently</button><a class="button ghost" asp-action="Details" asp-route-id="@Model.Id">Cancel</a></div></form></section>

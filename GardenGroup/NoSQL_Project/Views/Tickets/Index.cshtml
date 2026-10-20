@@ -1,0 +1,26 @@
+@model TicketList
+@{ ViewData["Title"] = "Tickets"; var desk = User.IsInRole(Roles.ServiceDesk); }
+<div class="page-heading"><div><h1>@(Model.Archived ? "Archived tickets" : "Open tickets")</h1><p class="muted">@(Model.Archived ? "Resolved and closed incidents. Tickets are kept for reference." : desk ? "Current open incidents across all employees." : "Your currently open incidents.")</p></div><div class="row-actions">
+<a class="button ghost" asp-action="Index" asp-route-archived="@(!Model.Archived)" asp-route-q="@Model.Query" asp-route-mode="@Model.Mode" asp-route-sort="@Model.Sort">@(Model.Archived ? "View open tickets" : "View archived tickets")</a>
+<a class="button" asp-action="Create">+ New ticket</a></div></div>
+<section class="card">
+<form asp-action="Index" method="get" class="search-bar"><div class="field search-field"><label for="q">Search subject and description</label><input id="q" name="q" value="@Model.Query" maxlength="160" placeholder="Try: laptop screen" /></div>
+<input name="archived" type="hidden" value="@Model.Archived.ToString().ToLowerInvariant()" />
+<div class="field"><label for="mode">Match words</label><select id="mode" name="mode"><option value="AND" selected="@(Model.Mode == "AND")">All words (AND)</option><option value="OR" selected="@(Model.Mode == "OR")">Any word (OR)</option></select></div>
+<div class="field"><label for="sort">Sort by</label><select id="sort" name="sort"><option value="newest" selected="@(Model.Sort == "newest")">Newest first</option><option value="priority-high" selected="@(Model.Sort == "priority-high")">Priority: high to low</option><option value="priority-low" selected="@(Model.Sort == "priority-low")">Priority: low to high</option></select></div>
+<button class="button" type="submit">Apply</button><a class="text-link" asp-action="Index" asp-route-archived="@Model.Archived">Reset</a></form>
+<div class="section-heading"><h2>@Model.Total @(Model.Total == 1 ? "ticket" : "tickets")</h2><span class="muted">Page @Model.Page of @Model.Pages</span></div>
+<div class="loaded-filter"><label for="loaded-filter">Filter this loaded page</label><input id="loaded-filter" placeholder="Try: High, Open, WiFi…" maxlength="100" /><span id="filter-feedback" aria-live="polite">@Model.Tickets.Count loaded tickets</span></div>
+@if (Model.Total == 0) { <div class="empty"><h3>No tickets found.</h3><p>Try different words or report your first issue.</p></div> }
+else { <div class="table-wrap"><table id="ticket-table"><thead><tr><th>Incident</th>@if (desk) { <th>Reported by</th> }<th>Priority</th><th>Status</th><th>Deadline (UTC)</th><th>Reported (UTC)</th></tr></thead><tbody>
+@foreach (var ticket in Model.Tickets) { <tr><td><a class="ticket-title" asp-action="Details" asp-route-id="@ticket.Id">@ticket.Subject</a><small>@ticket.Type · #@ticket.Id.ToString()[^6..]</small></td>
+@if (desk) { <td>@Model.EmployeeNames.GetValueOrDefault(ticket.ReportedByEmployeeId.ToString(), "Unknown employee")</td> }
+<td><span class="priority @ticket.Priority.ToLowerInvariant()">@ticket.Priority</span></td><td><span class="badge @ticket.Status.ToLowerInvariant()">@ticket.Status</span></td><td>@(ticket.Deadline == default ? "Not set" : ticket.Deadline.ToString("dd MMM yyyy")) @if (ticket.Status == "Open" && ticket.Deadline != default && ticket.Deadline.Date < DateTime.UtcNow.Date) { <small class="overdue">Overdue</small> }</td><td>@ticket.Dates.DateReported.ToString("dd MMM yyyy")</td></tr> }
+</tbody></table></div> }
+<nav class="pagination" aria-label="Ticket pages">
+@if (Model.Page > 1) { <a class="button ghost" asp-action="Index" asp-route-archived="@Model.Archived" asp-route-q="@Model.Query" asp-route-mode="@Model.Mode" asp-route-sort="@Model.Sort" asp-route-page="@(Model.Page - 1)">← Previous</a> }
+@if (Model.Page < Model.Pages) { <a class="button ghost" asp-action="Index" asp-route-archived="@Model.Archived" asp-route-q="@Model.Query" asp-route-mode="@Model.Mode" asp-route-sort="@Model.Sort" asp-route-page="@(Model.Page + 1)">Next →</a> }
+</nav></section><p class="fine">Search treats words as literal text. AND requires every word across either field; OR requires at least one. Search results default to newest first.</p>
+@if (Model.Tickets.Count > 0) {
+    @section Scripts { <script src="~/js/ticket-filter.js" asp-append-version="true"></script> }
+}

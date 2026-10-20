@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] · Garden Group</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+    <a class="brand" asp-controller="Home" asp-action="Index"><span class="brand-mark" aria-hidden="true">G</span><span>garden group<small>SERVICE DESK</small></span></a>
+    @if (User.Identity?.IsAuthenticated == true) {
+        <nav aria-label="Main navigation">
+            <a class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Home" ? "active" : "")" asp-controller="Home" asp-action="Index">Overview</a>
+            <a class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Tickets" ? "active" : "")" asp-controller="Tickets" asp-action="Index">Tickets</a>
+            @if (User.IsInRole(Roles.ServiceDesk)) { <a class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Employees" ? "active" : "")" asp-controller="Employees" asp-action="Index">Employees</a> }
+        </nav>
+        <div class="account"><span>@User.Identity.Name<small>@(User.IsInRole(Roles.ServiceDesk) ? "Service desk" : "Employee")</small></span>
+        <form asp-controller="Account" asp-action="Logout" method="post"><button class="button ghost compact" type="submit">Sign out</button></form></div>
+    }
+</header>
+<main id="main" class="container">
+    @if (TempData["Success"] is string message) { <div class="notice success" role="status">@message</div> }
+    @if (TempData["Error"] is string error) { <div class="notice validation" role="alert">@error</div> }
+    @RenderBody()
+</main>
+<footer class="footer"><span>Garden Group Service Desk</span><span>NoSQL project</span></footer>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

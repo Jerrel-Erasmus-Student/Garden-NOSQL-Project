@@ -1,0 +1,45 @@
+using Microsoft.AspNetCore.Identity;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
+using MongoDB.Driver;
+using NoSQL_Project.Models;
+using NoSQL_Project.Services;
+using NoSQL_Project.ViewModels;
+
+var checks = 0;
+void Check(bool condition, string message) { if (!condition) throw new Exception("FAIL: " + message); checks++; Console.WriteLine("PASS: " + message); }
+var now = new DateTime(2026, 10, 20, 12, 0, 0, DateTimeKind.Utc);
+var ticket = new Ticket { Dates = new Dates { DateReported = now.AddDays(-1) } };
+TicketWorkflow.SetStatus(ticket, TicketOptions.Closed, now);
+Check(ticket.Dates.SolvedAt == null && ticket.Dates.ClosedAt == now, "Closing an unsolved incident does not mark it solved");
+TicketWorkflow.SetStatus(ticket, TicketOptions.Open, now);
+Check(ticket.Dates.ClosedAt == null && ticket.Dates.SolvedAt == null, "Reopening clears completion dates");
+TicketWorkflow.SetStatus(ticket, TicketOptions.Resolved, now);
+TicketWorkflow.SetStatus(ticket, TicketOptions.Closed, now.AddHours(1));
+Check(ticket.Dates.SolvedAt == now && ticket.Dates.ClosedAt == now.AddHours(1), "Closing after resolution retains solved date");
+TicketWorkflow.SetStatus(ticket, TicketOptions.Closed, now.AddHours(2));
+Check(ticket.Dates.ClosedAt == now.AddHours(1), "Repeated close preserves original closure date");
+var invalidRejected = false;
+try { TicketWorkflow.SetStatus(ticket, "Invalid", now); } catch (ArgumentException) { invalidRejected = true; }
+Check(invalidRejected && ticket.Status == "Closed", "Unknown statuses are rejected without changing ticket");
+var sorted = new PrioritySortService();
+var items = new[] { new Ticket { Priority = "Low", Dates = new Dates { DateReported = now } }, new Ticket { Priority = "Critical", Dates = new Dates { DateReported = now } }, new Ticket { Priority = "High", Dates = new Dates { DateReported = now.AddDays(-1) } }, new Ticket { Priority = "High", Dates = new Dates { DateReported = now } } };
+Check(sorted.Sort(items, "priority-high").Select(t => t.Priority).SequenceEqual(new[] { "Critical", "High", "High", "Low" }), "Priority high to low is semantic, not alphabetical");
+Check(sorted.Sort(items, "priority-low").First().Priority == "Low", "Priority low to high starts with Low");
+Check(sorted.Sort(items, "priority-high").Skip(1).First().Dates.DateReported == now, "Priority ties use newest incident first");
+var dash = new Dashboard();
+Check(dash.Percent(0) == 0, "Empty dashboard avoids division by zero");
+dash.Open = 1; dash.Resolved = 1; dash.Closed = 1;
+Check(dash.Total == 3 && dash.Percent(1) == 33.3m, "Dashboard percentages round to one decimal place");
+var search = new TicketSearchService();
+var serializer = BsonSerializer.SerializerRegistry.GetSerializer<Ticket>();
+BsonDocument Render(string query, string mode) => search.BuildFilter(query, mode).Render(new RenderArgs<Ticket>(serializer, BsonSerializer.SerializerRegistry));
+Check(Render("screen laptop", "AND").Contains("$and"), "AND search combines all word clauses");
+Check(Render("screen laptop", "OR").Contains("$or"), "OR search combines alternatives");
+Check(Render(".*", "AND").ToJson().Contains("\\\\.\\\\*"), "Search escapes regex metacharacters");
+Check(Render("   ", "AND").ElementCount == 0, "Empty search has no extra filter");
+var hasher = new PasswordHasher<Employee>(); var employee = new Employee();
+var hash = hasher.HashPassword(employee, "ExamplePassword!2026");
+Check(hash != "ExamplePassword!2026" && hasher.VerifyHashedPassword(employee, hash, "ExamplePassword!2026") != PasswordVerificationResult.Failed, "Password is hashed and verifies correctly");
+Check(hasher.VerifyHashedPassword(employee, hash, "wrong") == PasswordVerificationResult.Failed, "Incorrect password is rejected");
+Console.WriteLine($"All {checks} focused checks passed.");

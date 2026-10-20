@@ -1,0 +1,16 @@
+@model Dashboard
+@{ ViewData["Title"] = "Overview"; var desk = User.IsInRole(Roles.ServiceDesk); }
+<div class="page-heading"><div><h1>Dashboard</h1><p class="muted">@(desk ? "Ticket statistics for all employees." : "Statistics for the tickets you reported.")</p></div><a class="button" asp-controller="Tickets" asp-action="Create">+ New ticket</a></div>
+<section class="stats" aria-label="Ticket statistics">
+<div class="card stat"><span class="stat-label">Total tickets</span><strong>@Model.Total</strong><span>@(desk ? "Across all employees" : "Reported by you")</span></div>
+<div class="card stat"><span class="stat-label"><i class="dot open"></i> Open</span><strong>@Model.Percent(Model.Open)%</strong><span>@Model.Open awaiting resolution</span></div>
+<div class="card stat"><span class="stat-label"><i class="dot resolved"></i> Resolved</span><strong>@Model.Percent(Model.Resolved)%</strong><span>@Model.Resolved solved incidents</span></div>
+<div class="card stat"><span class="stat-label"><i class="dot closed"></i> Closed without resolution</span><strong>@Model.Percent(Model.Closed)%</strong><span>@Model.Closed closed incidents</span></div>
+</section>
+<section class="card"><div class="section-heading"><div><h2>Recent tickets</h2></div><a class="text-link" asp-controller="Tickets" asp-action="Index">View all tickets →</a></div>
+@if (Model.Total == 0) { <div class="empty"><h3>No tickets yet</h3><p>You can create a ticket to report a problem.</p></div> }
+else { <div class="table-wrap"><table><thead><tr><th>Incident</th><th>Priority</th><th>Status</th><th>Reported (UTC)</th></tr></thead><tbody>
+@foreach (var ticket in Model.Recent) { <tr><td><a class="ticket-title" asp-controller="Tickets" asp-action="Details" asp-route-id="@ticket.Id">@ticket.Subject</a><small>@ticket.Type</small></td><td><span class="priority @ticket.Priority.ToLowerInvariant()">@ticket.Priority</span></td><td><span class="badge @ticket.Status.ToLowerInvariant()">@ticket.Status</span></td><td>@ticket.Dates.DateReported.ToString("dd MMM yyyy")</td></tr> }
+</tbody></table></div> }
+</section>
+<p class="fine">Resolved includes incidents marked resolved and incidents closed after resolution. Percentages are rounded to one decimal place.</p>

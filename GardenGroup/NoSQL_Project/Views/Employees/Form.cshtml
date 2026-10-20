@@ -1,0 +1,14 @@
+@model EmployeeForm
+@{ var edit = Model.Id != null; ViewData["Title"] = edit ? "Edit employee" : "Add employee"; }
+<a class="back-link" asp-action="Index">← Employees</a><div class="page-heading"><div><p class="eyebrow">EMPLOYEE ACCOUNTS</p><h1>@ViewData["Title"]</h1></div></div>
+<form asp-action="@(edit ? "Edit" : "Create")" asp-route-id="@Model.Id" method="post" class="card form-card"><div asp-validation-summary="All" class="validation" role="alert"></div>
+<h2>Personal details</h2><div class="form-grid">
+<div class="field"><label asp-for="First">First name *</label><input asp-for="First" required maxlength="60" /></div><div class="field"><label asp-for="Last">Last name *</label><input asp-for="Last" required maxlength="60" /></div>
+<div class="field"><label asp-for="Email">Email address *</label><input asp-for="Email" required maxlength="254" autocomplete="off" /></div><div class="field"><label asp-for="Phone">Phone</label><input asp-for="Phone" maxlength="30" /></div>
+</div><h2>Workplace</h2><div class="form-grid">
+<div class="field"><label asp-for="Branch">Branch name</label><input asp-for="Branch" maxlength="100" /></div><div class="field"><label asp-for="City"></label><input asp-for="City" maxlength="100" /></div>
+<div class="field"><label asp-for="Province"></label><input asp-for="Province" maxlength="100" /></div><div class="field"><label asp-for="Street">Street and house number</label><input asp-for="Street" maxlength="150" /></div>
+<div class="field"><label asp-for="Postcode"></label><input asp-for="Postcode" maxlength="20" /></div></div>
+<h2>Access</h2><div class="form-grid"><div class="field"><label asp-for="Role">Role *</label><select asp-for="Role"><option value="Regular">Regular employee</option><option value="ServiceDesk">Service desk</option></select></div>
+<div class="field"><label asp-for="Password">@(edit ? "New password (optional)" : "Initial password *")</label><input asp-for="Password" autocomplete="new-password" minlength="12" maxlength="128" required="@(!edit)" /><span class="fine">At least 12 characters. @(edit ? "Leave blank to keep the current password." : "Share it with the employee through an appropriate private channel.")</span></div></div>
+<div class="form-actions"><button class="button" type="submit">@(edit ? "Save changes" : "Create employee")</button><a class="button ghost" asp-action="Index">Cancel</a></div></form>
