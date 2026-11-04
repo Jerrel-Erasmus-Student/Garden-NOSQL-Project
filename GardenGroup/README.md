@@ -42,10 +42,10 @@ Open http://localhost:5188. Run the import command only once, against empty Empl
 
 ### Demo accounts
 
-| Role | Email | Password |
-| --- | --- | --- |
-| Service desk | dorothy.allen11@gardengroup.com | GardenDemo!2026 |
-| Regular employee | donald.allen66@gardengroup.com | GardenDemo!2026 |
+| Role             | Email                           | Password        |
+| ---------------- | ------------------------------- | --------------- |
+| Service desk     | dorothy.allen11@gardengroup.com | GardenDemo!2026 |
+| Regular employee | donald.allen66@gardengroup.com  | GardenDemo!2026 |
 
 
 See Employee_Logins.md for all 120 names, emails and roles. The original exported hashes appear incomplete (47-character bcrypt-style values), so the local imported copy uses new ASP.NET password hashes. Atlas and the source JSON files are not changed. These documented passwords are for local demonstration only.
