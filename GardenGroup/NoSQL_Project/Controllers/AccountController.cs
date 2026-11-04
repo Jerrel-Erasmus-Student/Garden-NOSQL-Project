@@ -11,7 +11,7 @@ using NoSQL_Project.ViewModels;
 
 namespace NoSQL_Project.Controllers;
 
-// Handles signing in, signing out, and the "access denied" page.
+
 public class AccountController : Controller
 {
     private readonly IEmployeeRepository _employees;
