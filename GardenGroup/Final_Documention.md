@@ -12,62 +12,114 @@ The project uses C#, ASP.NET Core MVC and MongoDB. It builds on the database mod
 
 ## Work allocation
 
-| Member | Main components | Additional feature |
-| --- | --- | --- |
-| Ahmed | Employee management and account validation | Priority sorting |
-| Denys | Ticket management and status changes | Ticket transfer |
-| Maksym | Interface, navigation and application setup | Filtering loaded tickets |
-| Jerrel | Login, permissions and dashboard | AND/OR ticket search |
+| Member | Main components | Allowed individual feature | Separate class |
+| --- | --- | --- | --- |
+| Ahmed | Employee management and account validation | Sort tickets by priority | `PrioritySortService` (C#) |
+| Denys | Ticket management and status changes | Transfer a ticket to another person | `TicketTransferService` (C#) |
+| Maksym | Interface, navigation and application setup | Filter a preloaded ticket list | `TicketFilter` (JavaScript) |
+| Jerrel | Login, permissions and dashboard | Search subject/content with AND, OR and newest-first results | `TicketSearchService` (C#) |
 
-## Ahmed - Employee management and sorting
+The four individual features are different options from the supplied allowed-functionality list, and each has its own class. The Open/Archived page toggle is part of normal ticket handling; it is not counted as the additional feature that moves older records to a secondary archive database.
 
-Ahmed's allocated area is employee management. Service desk staff can create accounts, edit employee details and roles, and delete accounts when they are not referenced by tickets.
+## Ahmed - Employee management and priority sorting
 
-`EmployeesController` validates the form before calling `EmployeeRepository`. A separate `EmployeeForm` controls which values can be submitted. New accounts require a password, while leaving the password field blank during an edit keeps the existing hash. Duplicate emails are rejected.
+Ahmed's part covers employee accounts: the list, create/edit forms, validation and deletion rules. `EmployeesController` checks the input and calls `EmployeeRepository` to save it. New accounts need a password; a blank password during an edit keeps the current hash. Duplicate emails are rejected.
 
-Employee deletion is blocked when tickets reference the employee as reporter or assignee. Deleting their tickets automatically would remove incident records, so keeping those relationships intact was preferred. Service desk staff also cannot delete their own account or remove their own service desk access.
+An employee cannot be deleted while tickets still reference that account. This follows the Employee-Ticket relationship from Delivery 1 and prevents broken reporter or assignee references. Deleting all related tickets would remove useful records, so that approach was not used.
 
-The additional feature is the separate `PrioritySortService` class. It ranks Critical above High, Normal and Low. Alphabetical sorting would give the wrong urgency order. Users can sort either way, and equal priorities are ordered by reported date. Sorting is applied before pagination so it covers the full result set.
+### Individual functionality: sort tickets by priority
 
-**Main files:** `EmployeesController.cs`, `EmployeeRepository.cs`, the employee views, `EmployeeForm` and `PrioritySortService.cs`.
+**Allowed option:** sorting a ticket list by its priority level.
 
-## Denys - Ticket management and transfer
+**Separate class:** `PrioritySortService` in `NoSQL_Project/Services/PrioritySortService.cs`.
 
-Denys's allocated area is ticket handling: creating tickets, displaying details, editing incidents and changing their status. New tickets start Open. For regular employees, the reporter ID comes from their signed-in account rather than being trusted from the form.
+The priority levels have a fixed order:
 
-`TicketRepository` handles storage, while `TicketWorkflow` keeps the status rules together. Resolving records a solved date. Closing records a closed date and keeps any existing solved date. Reopening clears the completion dates.
+- Critical = 4
+- High = 3
+- Normal = 2
+- Low = 1
 
-Separate solved and closed dates follow the Delivery 1 design. A duplicate ticket can be closed without its problem being solved, so one completion date would not describe both outcomes correctly.
+The ticket page offers high-to-low and low-to-high sorting. `TicketsController.Index` calls `Sort` when either option is selected. Sorting is applied to the matching tickets before pagination, so a Critical ticket on a later page is not missed. For equal priorities, the newest reported ticket comes first; the document ID breaks any remaining tie.
 
-The main ticket list shows Open incidents. The archive button shows Resolved and Closed incidents from the same collection. Records remain available, and the dashboard includes both views. Permanent deletion has a separate confirmation screen.
+For example, high-to-low must show Critical, High, Normal, then Low. Sorting the words alphabetically would put Low before Normal, which is why the service uses ranks. The ordering currently runs in C#. Database-side sorting would be a better choice for a much larger dataset.
 
-The additional feature is `TicketTransferService`. It checks that the recipient is a different, existing service desk employee, then changes the assignee while keeping the ticket's other details. Creating a duplicate ticket for the new assignee would make the incident harder to track and affect the totals.
+**How to demonstrate it:** select both sort directions and compare tickets with different priorities. Then compare two equal-priority tickets to check the newest-first tie break.
 
-**Main files:** `TicketsController.cs`, `TicketRepository.cs`, `Ticket.cs`, the ticket views, `TicketWorkflow.cs` and `TicketTransferService.cs`.
+**Other main files:** `Controllers/EmployeesController.cs`, `Repositories/EmployeeRepository.cs`, `Views/Employees/` and `ViewModels/Forms.cs`, all under `NoSQL_Project`.
+
+## Denys - Ticket handling and transfer
+
+Denys's area follows a ticket through its normal use: an employee reports a problem, the service desk opens its details, and someone updates the status. A new ticket starts Open. For regular employees, the reporter ID is taken from the signed-in account rather than trusted from a submitted form.
+
+The status rules are kept in `TicketWorkflow`. Resolving records a solved date. Closing records a closed date and preserves any existing solved date. Reopening clears the completion dates. Separate dates are useful because a duplicate can be closed without the problem being solved.
+
+The Open and Archived buttons show different sets of records from the same collection. The archive view keeps completed tickets accessible; it does not move them to another database.
+
+### Individual functionality: transfer a ticket
+
+The allowed-list feature assigned here is **transfer a ticket to another person**. Its separate class is `TicketTransferService`, in `NoSQL_Project/Services/TicketTransferService.cs`.
+
+A service desk employee opens a ticket, chooses another service desk employee in the transfer form and submits it. The controller checks the role and passes the ticket and recipient IDs to the service. The service then checks that the ticket exists, the recipient is a service desk employee, and the ticket is not already assigned to that person. If those checks pass, it updates the assignee.
+
+Suppose an incident is assigned to one colleague but another colleague should handle it. Transfer changes responsibility on that same ticket. Its ID, subject, description, status and dates remain the same. Creating a second ticket would split the incident across two records and affect the dashboard totals, so reassignment was preferred.
+
+**A useful demonstration:** transfer a ticket and reopen its details to show the new assignee. Also check that a regular employee cannot call the transfer action. The role restriction is on the server, not just the button.
+
+**Other main files:** `Controllers/TicketsController.cs`, `Repositories/TicketRepository.cs`, `Models/Ticket.cs`, `Services/TicketWorkflow.cs` and the views in `Views/Tickets/`, under `NoSQL_Project`.
 
 ## Maksym - Interface, setup and filtering
 
-Maksym's allocated area is the shared layout, navigation, ticket-list presentation and setup instructions. The interface uses consistent forms and tables so the application remains easy to follow. Labels, validation messages and Cancel buttons help users complete forms. Status is shown with text as well as colour.
+Maksym's part is the shared interface and setup. The pages use the same navigation, forms and table styles. Labels, validation messages and Cancel buttons make the forms easier to use. Status is written as text as well as shown with a colour. The server still checks access even when a link is hidden.
 
-The shared Razor layout and CSS avoid repeating the same design across pages. A large front-end framework was unnecessary for these screens. Navigation reflects each role, while server-side checks still protect restricted actions.
+The importer supports a local demonstration using the supplied Employee and Ticket files. It preserves ObjectIds and refuses nonempty collections. For team use, both laptops need the same Atlas database. Private connection settings are not included in Git, and another person's changes appear after refreshing the page.
 
-The additional feature is the separate JavaScript class `TicketFilter`. It filters rows already loaded on the current page. Typing hides nonmatching rows, and clearing the input restores them. This needs no database request because those rows are already in the browser. It cannot find tickets on other pages, which is why it is labelled separately from database search.
+### Individual functionality: filter an already loaded list
 
-The setup includes importing the supplied Employee and Ticket exports while preserving their ObjectIds. Importing into nonempty collections is refused to avoid overwriting existing records. Shared use requires both laptops to connect to the same Atlas database. Private connection settings are excluded from Git.
+This is the **filtering a preloaded ticket list using keywords** option from the allowed list. It uses a separate JavaScript class, `TicketFilter`, in `NoSQL_Project/wwwroot/js/ticket-filter.js`.
 
-**Main files:** `_Layout.cshtml`, `Views/Tickets/Index.cshtml`, `site.css`, `ticket-filter.js`, `DatabaseImporter.cs` and the setup instructions.
+It works in three steps:
 
-## Jerrel - Login, permissions, dashboard and search
+1. When the page opens, the class keeps references to the ticket rows already displayed.
+2. As someone types, it compares the words with each row's text and hides rows that do not match.
+3. Clearing the input brings the rows back. A counter shows how many loaded rows are visible.
 
-Jerrel's allocated area is authentication, access control and the shared dashboard. Login checks the employee's email and verifies their password with ASP.NET's `PasswordHasher`. The database stores a salted hash rather than the original password. A successful login creates an authentication cookie containing the employee ID and role.
+Typing `High`, for example, keeps rows containing that word. Typing two words requires both to appear somewhere in the row. Matching ignores capital letters.
 
-Permissions are enforced on the server. Regular employees can view their own reported tickets; service desk staff can manage tickets across employees. Hiding buttons alone would not prevent someone opening a restricted URL. Existing sessions are also checked against account changes, and form submissions use anti-forgery validation.
+This belongs in the browser because the rows are already there. The class does not send a new request, change MongoDB records or fetch more tickets. It checks the current page, normally up to 20 rows. It cannot find a ticket on another page.
 
-Both roles use the same dashboard view. MongoDB first restricts regular-employee queries to their reporter ID, then groups tickets into outcome categories. The view model calculates percentages and handles zero tickets. Counting only the visible table page would give incorrect totals.
+That is the difference from Jerrel's search. Search asks MongoDB for matching tickets; this control only narrows the loaded list. The page labels it **Filter this loaded page** to make that limit clear.
 
-The additional feature is `TicketSearchService`. AND requires every search word across the subject or description; OR accepts at least one. Search ignores letter case and escapes regex characters so the input stays literal. The search condition is combined with ownership and open/archive restrictions. Results default to newest first.
+**To show it working:** type a keyword, watch rows disappear, then clear it and watch them return without reloading. Try a word that matches nothing as well.
 
-**Main files:** `AccountController.cs`, `HomeController.cs`, authentication setup in `Program.cs`, the account and dashboard views, and `TicketSearchService.cs`.
+**Other main files:** `Views/Shared/_Layout.cshtml`, `Views/Tickets/Index.cshtml`, `wwwroot/css/site.css`, `Services/DatabaseImporter.cs` and the setup instructions.
+
+## Jerrel - Authentication, dashboard and search
+
+Jerrel's area connects the signed-in employee to the rest of the application. Login verifies a stored password hash with ASP.NET's `PasswordHasher` and creates an authentication cookie containing the employee ID and role. Restricted actions are checked on the server. Regular employees see their own reported tickets; service desk staff can manage tickets across employees.
+
+Both roles use the same dashboard view. MongoDB first limits the regular-employee query to the reporter ID, then groups the tickets by outcome. The view model calculates percentages and handles an empty result. A solved-then-closed ticket remains in the resolved outcome category, using the separate solved and closed dates from Delivery 1.
+
+### Individual functionality: AND/OR ticket search
+
+**Allowed option:** searching ticket subjects and content with AND/OR and newest results first.
+
+**Separate class:** `TicketSearchService` in `NoSQL_Project/Services/TicketSearchService.cs`.
+
+`BuildFilter` splits the query into words. Each word may appear in either the subject or the description. The selected mode determines how those word conditions are combined:
+
+- **AND:** every word must match somewhere across the two fields.
+- **OR:** at least one word must match.
+
+For `printer office`, AND accepts a ticket with printer in its subject and office in its description. OR also accepts a ticket containing just one of those words. Matching ignores case, and regex characters are escaped so input such as `.*` stays literal text.
+
+The controller combines the full search filter with the reporter restriction and the selected Open/Archived view. Choosing OR therefore does not expose another employee's tickets. `TicketRepository.Find` orders results by reported date descending, then by ID. Newest first is the default; the priority options let the user explicitly choose a different order.
+
+The search runs in MongoDB, rather than checking only the current table page. Literal regex matching keeps the implementation small, but it is not a full-text indexed search system. A larger collection would need a suitable search index and measured query performance.
+
+**Demonstration:** compare AND and OR with the same two words, check the date order under Newest first, and verify that a regular employee still cannot find another employee's tickets.
+
+**Other main files:** `Controllers/AccountController.cs`, `Controllers/HomeController.cs`, `Program.cs`, the account/dashboard views and `Repositories/TicketRepository.cs`.
 
 ## Shared database choices
 
@@ -80,3 +132,9 @@ MongoDB does not enforce these references as SQL foreign keys, so the applicatio
 Development checks covered login, role restrictions, CRUD, dashboard calculations, search, sorting, transfer, filtering, and closing and reopening tickets. Integration brings these features together in the ticket list while keeping the ownership rules in place.
 
 There are limits to the current implementation. Priority sorting and pagination run in application memory, regex search is not a full-text search system, and simultaneous edits can overwrite each other. Tickets also need a page refresh to show changes from another laptop. Database-side pagination, a suitable search index and edit-conflict detection would be useful improvements for a larger system.
+
+## Individual feature check
+
+All four features were found in the current clone, including their interface controls and controller/script connections. No additional application feature was needed for this check. Feature ownership in this document follows the group work allocation; code inspection alone does not establish who originally wrote a class.
+
+The current solution built with zero warnings and errors. The existing 16 C# checks and six additional JavaScript filtering checks passed during this review. Transfer was checked in its service, protected action and form; this review did not transfer any live Atlas ticket. These are project verification results, not claims about which student ran the checks.
